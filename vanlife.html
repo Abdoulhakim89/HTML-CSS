@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>product-detail</title>
+    <link href="vanlife.css" rel="stylesheet">
+</head>
+<body>
+    <div class="content">
+      <h1 id="vanlife">#VANLIFE</h1>
+                <p id="prevPage"><u>Back to all vans</u></p>
+            <br><br>
+                <img src="./van-image.png">
+            <br><br>
+        <button id="simple">simple</button>
+            <br><br>
+      <h1>Modest explorer</h1>
+            <p id="price"><strong id="six">$60</strong>/day</p>
+        
+            <p id="modest">The modest explorer is a van designed to get you out of the house
+                and into nature. This beauty is equipped with solar panels, a composting
+                toilet, a water tank and a kitchenette. The idea is that you can pack your
+                home and escape for a weekend or even longer.
+            </p>
+        <button id="rent"><strong>Rent this van</strong></button>
+        <br><br><br>
+        <button id="circle">
+
+        </button>
+        <script>
+            let par = document.querySelector("#modest");
+            let but = document.querySelector("#rent");
+
+            const changePar = () => {
+                par.textContent = "Your rent has been issued"
+            }
+            but.addEventListener("click", changePar);
+        </script>
+        <br><br><br><br><br>
+        <script>
+            let button = document.getElementById('circle');
+            const changeColor = () => {
+                button.style.backgroundColor = "green";
+            };
+            button.addEventListener("click", changeColor);
+        </script>
+        <footer>
+            <button id="foot">©2022 VANLIFE</button>
+        </footer>   
+        
+    </div> 
+    
+</body>
+</html>
