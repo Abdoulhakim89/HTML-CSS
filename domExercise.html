@@ -4,15 +4,26 @@
     <link href="./domExercise.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-   <button id="submit" onclick="anifa()">submit</button>
-    
+   <form>
+        <label for="name" > username</label>
+        <input type="text" id="username"><br>
+        <br><br>
+        <label for="name"> password</label>
+        <input type="password" id="password"><br>
+        <br>
+        <button type="submit">Submit</button>
+   </form> 
    <script>
-    function anifa (){
-        const body = document.querySelector("submit")
-            body.style.color = "red";
-        
-
+    let form = document.querySelector("form");
+    let name = document.querySelector("#username");
+    let password = document.querySelector("#password");
+    
+    form.addEventListener("submit",
+        (event) => {event.preventDefault();
+     console.log(username.value +"\n" + password.value);
+     
     }
+    )
    </script>
    
 </body>
