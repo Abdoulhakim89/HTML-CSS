@@ -3,7 +3,9 @@
 <head>
     <link href="./domExercise.css" type="text/css" rel="stylesheet">
 </head>
-<body>
+<!-- Create a form that will display the password and username to the console or an alert box  -->
+<body class="dark">
+    <h1>Display for the password and username</h1>
    <form>
         <label for="name" > username</label>
         <input type="text" id="username"><br>
@@ -20,11 +22,32 @@
     
     form.addEventListener("submit",
         (event) => {event.preventDefault();
-     console.log(username.value +"\n" + password.value);
+     console.log(`The username is ${username.value} \n  The password is ${password.value}`);
      
     }
     )
    </script>
+   <!-- 1. Dark mode: Write a program that changes the element’s background color to black and text to white when a user clicks on a button. When a button is clicked again it changes back to the default style. -->
+    <h1>Dark mode for the document </h1>
+    <p class="darkmode">This is a paragraph for testing whether we can turn on the dark mode <br>
+    of a document. so, let's see how it goes with this certain paragraph <br>
+    Good luck to us!
+    </p>
+    <button class="dmbut">Dark mode</button>
+    <style>
+        .dark {
+    color: white;
+    background-color: black;
+    }
+    </style>
+    <script>
+        let body = document.querySelector('body');
+        let darkModebut = document.querySelector(".dmbut");
+        darkModebut.addEventListener('click', ()=>{
+            body.classList.toggle('dark');
+        }) 
+    </script>
+
    
 </body>
 </html>
