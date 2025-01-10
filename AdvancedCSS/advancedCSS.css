@@ -1,0 +1,63 @@
+*{
+    margin: 0px;
+}
+
+.navigation{
+    background-color:black;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+
+}
+ul{
+    list-style: none;
+    display: flex;
+    color: white ;
+    gap:12px;
+    padding: 20px;
+}
+
+.badge{
+    height: 50px;
+    padding-top:28px;
+    padding-left: 100px;
+}
+.school{
+    background-image: url("./back-image.png");
+    background-size: 100%;
+    height: 300px;
+    background-repeat: no-repeat;
+
+}
+.opaque{
+    height: 200px;
+    background-color:rgb(0,0,0,0.5);
+}
+.titleOne{
+    display: flex;
+    gap: 70%;
+}
+.introImages{
+    display: flex;
+    gap: 25px;
+}
+.intIm{
+    border-radius: 5%;
+    height: 80px;
+    width: 140px;
+}
+.introText{
+    display: flex;
+    gap: 25px;
+}
+.inttex{
+    height: 100px;
+    width: 140px;
+    font-size: 12px;
+}
+span{
+    color: rgb(7, 7, 234);
+}
+
+
